@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: red; /* fundo vermelho */
+}
+
+.container {
+  text-align: center;
+  color: white;
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+button {
+  margin: 5px;
+  padding: 10px 20px;
+  border: 2px solid white; /* borda branca */
+  border-radius: 20px; /* bordas arredondadas */
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease; /* transição suave */
+}
+
+button#naoBtn:hover,
+button#naoBtn.clicked {
+  position: absolute;
+  left: calc(100% * Math.random());
+  top: calc(100% * Math.random());
+}
